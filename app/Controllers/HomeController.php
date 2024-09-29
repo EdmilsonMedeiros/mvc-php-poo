@@ -8,6 +8,6 @@ class HomeController extends Controller{
 
     public function index(){
         
-        return require __DIR__ . '../../Views/home/index.php';
+        return $this->view('/home/index');
     }
 }

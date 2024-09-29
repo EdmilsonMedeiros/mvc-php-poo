@@ -24,12 +24,7 @@ class UserController extends Controller{
         // // Retorna os dados do usuário em formato JSON
         // echo json_encode($user);
 
-        return require __DIR__ . '../../Views/user/profile.php';
-    }
-
-    public function login() {
-        // Lógica de login ou renderização de view de login
-        return require __DIR__ . '../../Views/user/login.php';
+        return $this->view('/user/profile', ['user' => $user]);
     }
 
     public function getAllUsers(){
