@@ -14,8 +14,8 @@ class UserController extends Controller{
         // Verifica se o usuário foi encontrado
         if (!$user) {
             http_response_code(404);
-            echo "Usuário não encontrado!";
-            return;
+            
+            return $this->view('/404');
         }
 
 
