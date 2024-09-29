@@ -26,4 +26,4 @@ foreach ($routes as $route => [$controller, $method]) {
 
 // Exibir erro 404 se a rota não for encontrada
 http_response_code(404);
-echo "Página não encontrada!";
+return require __DIR__ . '../../app/Views/404.php';

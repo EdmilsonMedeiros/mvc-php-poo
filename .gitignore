@@ -4,3 +4,5 @@ vendor/
 # enviroments
 .env
 
+# node
+node_modules/

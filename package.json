@@ -1,0 +1,14 @@
+{
+  "name": "phpproject",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000m\u0000v\u0000c\u0000-\u0000p\u0000h\u0000p\u0000-\u0000p\u0000o\u0000o\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edmilson Jarbson",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
+}
