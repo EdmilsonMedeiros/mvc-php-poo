@@ -1,4 +1,6 @@
+# composer
+vendor/
+
 # enviroments
 .env
-vendor
-storage/app/*
+
