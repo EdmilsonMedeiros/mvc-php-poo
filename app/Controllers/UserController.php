@@ -1,0 +1,45 @@
+<?php
+
+namespace App\Controllers;
+
+use App\Models\User;
+
+class UserController extends Controller{
+
+    // Exibe o perfil do usuário
+    public function profile($id) {
+        $userModel = new User();
+        $user = $userModel->getUserById($id); // Usando o ID do parâmetro
+
+        // Verifica se o usuário foi encontrado
+        if (!$user) {
+            http_response_code(404);
+            echo "Usuário não encontrado!";
+            return;
+        }
+
+
+        // // Define o cabeçalho para JSON | Retorno de dados como json
+        // header('Content-Type: application/json');
+        // // Retorna os dados do usuário em formato JSON
+        // echo json_encode($user);
+
+        return require __DIR__ . '../../Views/user/profile.php';
+    }
+
+    public function login() {
+        // Lógica de login ou renderização de view de login
+        return require __DIR__ . '../../Views/user/login.php';
+    }
+
+    public function getAllUsers(){
+        $user = new User();
+        return $user->getAllUsers();
+    }
+
+    public function getUserById($id){
+        $user = new User();
+        return $user->getUserById($id);
+    }
+
+}
