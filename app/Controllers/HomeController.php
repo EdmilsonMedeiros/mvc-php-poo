@@ -8,8 +8,6 @@ class HomeController extends Controller{
 
     public function index(){
         
-        echo(getenv('DB_NAME'));
-        
         return require __DIR__ . '../../Views/home/index.php';
     }
 }

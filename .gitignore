@@ -1,5 +1,4 @@
 # enviroments
 .env
-
-# Ignora tudo em app, xceto a própria pasta app (para que a estrutura seja mantida)
-#!/storage/app/
+vendor
+storage/app/*
